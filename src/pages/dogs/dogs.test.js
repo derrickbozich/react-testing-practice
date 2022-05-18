@@ -7,6 +7,9 @@ import userEvent from "@testing-library/user-event";
 import mockFetch from "../../mocks/mockFetch";
 import Dogs from "./index";
 
+// Reference:
+// https://www.digitalocean.com/community/tutorials/how-to-test-a-react-app-with-jest-and-react-testing-library
+
 beforeEach(() => {
     jest.spyOn(window, "fetch").mockImplementation(mockFetch);
 });

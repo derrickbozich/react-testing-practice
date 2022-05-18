@@ -2,6 +2,9 @@ import axios from 'axios';
 import { render, screen, waitFor, act } from '@testing-library/react';
 import App from './App';
 
+// Reference
+// https://blog.logrocket.com/testing-react-apps-jest-react-testing-library/
+
 jest.mock('axios');
 
 const fakeUsers = [{
