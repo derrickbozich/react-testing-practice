@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import placeholderImg from "../../images/dog.svg";
 
 function Dogs() {
-    const [breeds, setBreeds] = useState([]);
-    const [selectedBreed, setSelectedBreed] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
-    const [dogImages, setDogImages] = useState([]);
+    const [breeds, setBreeds] = useState<string[]>([]);
+    const [selectedBreed, setSelectedBreed] = useState<string>("");
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [dogImages, setDogImages] = useState<string[]>([]);
 
     useEffect(() => {
         fetch("https://dog.ceo/api/breeds/list/all")

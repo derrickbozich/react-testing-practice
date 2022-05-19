@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import Dogs from './pages/dogs';
+import Counter from './pages/counter';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <Dogs />
-  </React.StrictMode>,
+  
+ 
+    <Counter />,
+
+
   document.getElementById('root')
 );
 
